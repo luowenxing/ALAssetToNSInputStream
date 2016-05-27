@@ -79,6 +79,8 @@ class ALAssetToNSInputStream:NSObject,NSStreamDelegate {
             let writeSize = rept.getBytes(assetBuffer, fromOffset: self.offset ,length: length, error:nil)
             let written = self.writeStream.write(assetBuffer, maxLength: writeSize)
             self.offset += written
+        } else {
+            self.finish()
         }
     }
     
@@ -128,12 +130,11 @@ extension ALAsset {
 }
 
 extension NSInputStream {
-    class func inputStreamWithAssetURL(url:NSURL) -> NSInputStream?{
+    class func inputStreamWithAssetURL(assetUrl:NSURL,bufferSize:Int = 1024*1024) -> NSInputStream?{
         let readStreamPointer = UnsafeMutablePointer<Unmanaged<CFReadStream>?>.alloc(1)
         let writeStreamPointer = UnsafeMutablePointer<Unmanaged<CFWriteStream>?>.alloc(1)
-        let bufferSize = 1024*1024
         CFStreamCreateBoundPair(kCFAllocatorMalloc, readStreamPointer,writeStreamPointer, Int(bufferSize) as CFIndex)
-        if let rStream = readStreamPointer.memory?.takeRetainedValue(),writeStream = writeStreamPointer.memory?.takeRetainedValue(),lib = ALAsset.getLib(),asset = ALAsset.getAssetFromUrlSync(lib, url: url.absoluteString) {
+        if let rStream = readStreamPointer.memory?.takeRetainedValue(),writeStream = writeStreamPointer.memory?.takeRetainedValue(),lib = ALAsset.getLib(),asset = ALAsset.getAssetFromUrlSync(lib, url: assetUrl.absoluteString) {
             let _ = ALAssetToNSInputStream(readStream: rStream, writeStream: writeStream, asset: asset, lib: lib, bufferSize: bufferSize)
             return rStream
         }
