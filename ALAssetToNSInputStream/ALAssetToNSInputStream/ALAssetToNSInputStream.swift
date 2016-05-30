@@ -108,8 +108,7 @@ extension ALAsset {
                         dispatch_semaphore_signal(sema)
                 })
             }
-            dispatch_semap
-            hore_wait(sema, DISPATCH_TIME_FOREVER)
+            dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER)
             return result
         }
         return nil
