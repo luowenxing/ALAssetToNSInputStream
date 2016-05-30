@@ -18,7 +18,9 @@ let inpurStream = NSInputStream.inputStreamWithAssetURL(assetUrl)
 * Start your network request by `NSURLConnection` or `NSURLSession`
 
 # Reference
-* [ios-how-to-upload-a-large-asset-file-into-sever-by-streaming](http://stackoverflow.com/questions/18348863/ios-how-to-upload-a-large-asset-file-into-sever-by-streaming)
-* [For large blocks of constructed data, call CFStreamCreateBoundPair to create a pair of streams, then call the setHTTPBodyStream: method to tell NSMutableURLRequest to use one of those streams as the source for its body content. By writing into the other stream, you can send the data a piece at a time.](https://developer.apple.com/library/ios/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/WorkingWithHTTPAndHTTPSRequests/WorkingWithHTTPAndHTTPSRequests.html)
+[iOS Developer Library](https://developer.apple.com/library/ios/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/WorkingWithHTTPAndHTTPSRequests/WorkingWithHTTPAndHTTPSRequests.html)
+> For large blocks of constructed data, call CFStreamCreateBoundPair to create a pair of streams, then call the setHTTPBodyStream: method to tell NSMutableURLRequest to use one of those streams as the source for its body content. By writing into the other stream, you can send the data a piece at a time.
+
+[ios-how-to-upload-a-large-asset-file-into-sever-by-streaming](http://stackoverflow.com/questions/18348863/ios-how-to-upload-a-large-asset-file-into-sever-by-streaming)
 
 
