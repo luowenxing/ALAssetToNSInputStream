@@ -15,7 +15,7 @@
 		B1F5196D1CF83E8600EB0618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F519661CF83E8600EB0618 /* Main.storyboard */; };
 		B1F5196E1CF83E8600EB0618 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1F519681CF83E8600EB0618 /* Info.plist */; };
 		B1F5196F1CF83E8600EB0618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F519691CF83E8600EB0618 /* ViewController.swift */; };
-		B1F519721CF83EB500EB0618 /* ALAssetIOStreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F519711CF83EB500EB0618 /* ALAssetIOStreamManager.swift */; };
+		B1F519721CF83EB500EB0618 /* ALAssetToNSInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F519711CF83EB500EB0618 /* ALAssetToNSInputStream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 		B1F519671CF83E8600EB0618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1F519681CF83E8600EB0618 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1F519691CF83E8600EB0618 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B1F519711CF83EB500EB0618 /* ALAssetIOStreamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALAssetIOStreamManager.swift; sourceTree = "<group>"; };
+		B1F519711CF83EB500EB0618 /* ALAssetToNSInputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALAssetToNSInputStream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +140,7 @@
 		B1F519701CF83E8D00EB0618 /* ALAssetToNSInputStream */ = {
 			isa = PBXGroup;
 			children = (
-				B1F519711CF83EB500EB0618 /* ALAssetIOStreamManager.swift */,
+				B1F519711CF83EB500EB0618 /* ALAssetToNSInputStream.swift */,
 			);
 			path = ALAssetToNSInputStream;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 			files = (
 				B1F5196F1CF83E8600EB0618 /* ViewController.swift in Sources */,
 				B1F5196A1CF83E8600EB0618 /* AppDelegate.swift in Sources */,
-				B1F519721CF83EB500EB0618 /* ALAssetIOStreamManager.swift in Sources */,
+				B1F519721CF83EB500EB0618 /* ALAssetToNSInputStream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
