@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B17EA1721D2BB68A00AF4229 /* ALAssetToStreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17EA1711D2BB68A00AF4229 /* ALAssetToStreamManager.swift */; };
 		B1F519491CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F519481CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.swift */; };
 		B1F519541CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F519531CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests.swift */; };
 		B1F5196A1CF83E8600EB0618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F519621CF83E8600EB0618 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B17EA1711D2BB68A00AF4229 /* ALAssetToStreamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALAssetToStreamManager.swift; sourceTree = "<group>"; };
 		B1F519301CF83E0900EB0618 /* ALAssetToNSInputStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALAssetToNSInputStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F519441CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALAssetToNSInputStreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F519481CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALAssetToNSInputStreamTests.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		B1F519701CF83E8D00EB0618 /* ALAssetToNSInputStream */ = {
 			isa = PBXGroup;
 			children = (
+				B17EA1711D2BB68A00AF4229 /* ALAssetToStreamManager.swift */,
 				B1F519711CF83EB500EB0618 /* ALAssetToNSInputStream.swift */,
 			);
 			path = ALAssetToNSInputStream;
@@ -279,6 +282,7 @@
 			files = (
 				B1F5196F1CF83E8600EB0618 /* ViewController.swift in Sources */,
 				B1F5196A1CF83E8600EB0618 /* AppDelegate.swift in Sources */,
+				B17EA1721D2BB68A00AF4229 /* ALAssetToStreamManager.swift in Sources */,
 				B1F519721CF83EB500EB0618 /* ALAssetToNSInputStream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
