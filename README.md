@@ -18,6 +18,7 @@ let inputStream2 = ALAssetNSInputStream(URL: assetUrl)
 **Note**
 
 `inputStream1` is implemented by `CFCreateBounderPair` which use two stream to transfer data from one side to the other side,and will not change the behavior of `NSInputStream`.It's may be more safer.
+
 `inputStream2` is implemented by inheriting `NSInputStream` which completely overrides super methods,and changes the behavoir of `NSInputStream`.
 * Set `HTTPBodyStream` of `NSMutableURLRequest` to `NSInputStream` you got
 * Start your network request by `NSURLConnection` or `NSURLSession`
