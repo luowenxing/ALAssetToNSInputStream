@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B17EA1721D2BB68A00AF4229 /* ALAssetToStreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17EA1711D2BB68A00AF4229 /* ALAssetToStreamManager.swift */; };
-		B1F519491CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F519481CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.swift */; };
-		B1F519541CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F519531CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests.swift */; };
 		B1F5196A1CF83E8600EB0618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F519621CF83E8600EB0618 /* AppDelegate.swift */; };
 		B1F5196B1CF83E8600EB0618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F519631CF83E8600EB0618 /* Assets.xcassets */; };
 		B1F5196C1CF83E8600EB0618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F519641CF83E8600EB0618 /* LaunchScreen.storyboard */; };
@@ -19,32 +16,8 @@
 		B1F519721CF83EB500EB0618 /* ALAssetToNSInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F519711CF83EB500EB0618 /* ALAssetToNSInputStream.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B1F519451CF83E0A00EB0618 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1F519281CF83E0900EB0618 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1F5192F1CF83E0900EB0618;
-			remoteInfo = ALAssetToNSInputStream;
-		};
-		B1F519501CF83E0A00EB0618 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1F519281CF83E0900EB0618 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1F5192F1CF83E0900EB0618;
-			remoteInfo = ALAssetToNSInputStream;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		B17EA1711D2BB68A00AF4229 /* ALAssetToStreamManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALAssetToStreamManager.swift; sourceTree = "<group>"; };
 		B1F519301CF83E0900EB0618 /* ALAssetToNSInputStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALAssetToNSInputStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1F519441CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALAssetToNSInputStreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1F519481CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALAssetToNSInputStreamTests.swift; sourceTree = "<group>"; };
-		B1F5194A1CF83E0A00EB0618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1F5194F1CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALAssetToNSInputStreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1F519531CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALAssetToNSInputStreamUITests.swift; sourceTree = "<group>"; };
-		B1F519551CF83E0A00EB0618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1F519621CF83E8600EB0618 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1F519631CF83E8600EB0618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1F519651CF83E8600EB0618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,20 +35,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1F519411CF83E0A00EB0618 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1F5194C1CF83E0A00EB0618 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,8 +42,6 @@
 			isa = PBXGroup;
 			children = (
 				B1F519321CF83E0900EB0618 /* ALAssetToNSInputStream */,
-				B1F519471CF83E0A00EB0618 /* ALAssetToNSInputStreamTests */,
-				B1F519521CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests */,
 				B1F519311CF83E0900EB0618 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,8 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				B1F519301CF83E0900EB0618 /* ALAssetToNSInputStream.app */,
-				B1F519441CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.xctest */,
-				B1F5194F1CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,24 +61,6 @@
 				B1F519611CF83E8600EB0618 /* Demo */,
 			);
 			path = ALAssetToNSInputStream;
-			sourceTree = "<group>";
-		};
-		B1F519471CF83E0A00EB0618 /* ALAssetToNSInputStreamTests */ = {
-			isa = PBXGroup;
-			children = (
-				B1F519481CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.swift */,
-				B1F5194A1CF83E0A00EB0618 /* Info.plist */,
-			);
-			path = ALAssetToNSInputStreamTests;
-			sourceTree = "<group>";
-		};
-		B1F519521CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B1F519531CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests.swift */,
-				B1F519551CF83E0A00EB0618 /* Info.plist */,
-			);
-			path = ALAssetToNSInputStreamUITests;
 			sourceTree = "<group>";
 		};
 		B1F519611CF83E8600EB0618 /* Demo */ = {
@@ -142,7 +79,6 @@
 		B1F519701CF83E8D00EB0618 /* ALAssetToNSInputStream */ = {
 			isa = PBXGroup;
 			children = (
-				B17EA1711D2BB68A00AF4229 /* ALAssetToStreamManager.swift */,
 				B1F519711CF83EB500EB0618 /* ALAssetToNSInputStream.swift */,
 			);
 			path = ALAssetToNSInputStream;
@@ -168,42 +104,6 @@
 			productReference = B1F519301CF83E0900EB0618 /* ALAssetToNSInputStream.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B1F519431CF83E0A00EB0618 /* ALAssetToNSInputStreamTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1F5195B1CF83E0A00EB0618 /* Build configuration list for PBXNativeTarget "ALAssetToNSInputStreamTests" */;
-			buildPhases = (
-				B1F519401CF83E0A00EB0618 /* Sources */,
-				B1F519411CF83E0A00EB0618 /* Frameworks */,
-				B1F519421CF83E0A00EB0618 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B1F519461CF83E0A00EB0618 /* PBXTargetDependency */,
-			);
-			name = ALAssetToNSInputStreamTests;
-			productName = ALAssetToNSInputStreamTests;
-			productReference = B1F519441CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B1F5194E1CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1F5195E1CF83E0A00EB0618 /* Build configuration list for PBXNativeTarget "ALAssetToNSInputStreamUITests" */;
-			buildPhases = (
-				B1F5194B1CF83E0A00EB0618 /* Sources */,
-				B1F5194C1CF83E0A00EB0618 /* Frameworks */,
-				B1F5194D1CF83E0A00EB0618 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B1F519511CF83E0A00EB0618 /* PBXTargetDependency */,
-			);
-			name = ALAssetToNSInputStreamUITests;
-			productName = ALAssetToNSInputStreamUITests;
-			productReference = B1F5194F1CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,14 +116,6 @@
 				TargetAttributes = {
 					B1F5192F1CF83E0900EB0618 = {
 						CreatedOnToolsVersion = 7.3;
-					};
-					B1F519431CF83E0A00EB0618 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = B1F5192F1CF83E0900EB0618;
-					};
-					B1F5194E1CF83E0A00EB0618 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = B1F5192F1CF83E0900EB0618;
 					};
 				};
 			};
@@ -241,8 +133,6 @@
 			projectRoot = "";
 			targets = (
 				B1F5192F1CF83E0900EB0618 /* ALAssetToNSInputStream */,
-				B1F519431CF83E0A00EB0618 /* ALAssetToNSInputStreamTests */,
-				B1F5194E1CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,20 +149,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1F519421CF83E0A00EB0618 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1F5194D1CF83E0A00EB0618 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -282,41 +158,11 @@
 			files = (
 				B1F5196F1CF83E8600EB0618 /* ViewController.swift in Sources */,
 				B1F5196A1CF83E8600EB0618 /* AppDelegate.swift in Sources */,
-				B17EA1721D2BB68A00AF4229 /* ALAssetToStreamManager.swift in Sources */,
 				B1F519721CF83EB500EB0618 /* ALAssetToNSInputStream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1F519401CF83E0A00EB0618 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1F519491CF83E0A00EB0618 /* ALAssetToNSInputStreamTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1F5194B1CF83E0A00EB0618 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1F519541CF83E0A00EB0618 /* ALAssetToNSInputStreamUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B1F519461CF83E0A00EB0618 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B1F5192F1CF83E0900EB0618 /* ALAssetToNSInputStream */;
-			targetProxy = B1F519451CF83E0A00EB0618 /* PBXContainerItemProxy */;
-		};
-		B1F519511CF83E0A00EB0618 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B1F5192F1CF83E0900EB0618 /* ALAssetToNSInputStream */;
-			targetProxy = B1F519501CF83E0A00EB0618 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B1F519641CF83E8600EB0618 /* LaunchScreen.storyboard */ = {
@@ -447,52 +293,6 @@
 			};
 			name = Release;
 		};
-		B1F5195C1CF83E0A00EB0618 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ALAssetToNSInputStreamTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cmbchina.ALAssetToNSInputStreamTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ALAssetToNSInputStream.app/ALAssetToNSInputStream";
-			};
-			name = Debug;
-		};
-		B1F5195D1CF83E0A00EB0618 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ALAssetToNSInputStreamTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cmbchina.ALAssetToNSInputStreamTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ALAssetToNSInputStream.app/ALAssetToNSInputStream";
-			};
-			name = Release;
-		};
-		B1F5195F1CF83E0A00EB0618 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ALAssetToNSInputStreamUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cmbchina.ALAssetToNSInputStreamUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ALAssetToNSInputStream;
-			};
-			name = Debug;
-		};
-		B1F519601CF83E0A00EB0618 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ALAssetToNSInputStreamUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cmbchina.ALAssetToNSInputStreamUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ALAssetToNSInputStream;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -510,24 +310,6 @@
 			buildConfigurations = (
 				B1F519591CF83E0A00EB0618 /* Debug */,
 				B1F5195A1CF83E0A00EB0618 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1F5195B1CF83E0A00EB0618 /* Build configuration list for PBXNativeTarget "ALAssetToNSInputStreamTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1F5195C1CF83E0A00EB0618 /* Debug */,
-				B1F5195D1CF83E0A00EB0618 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1F5195E1CF83E0A00EB0618 /* Build configuration list for PBXNativeTarget "ALAssetToNSInputStreamUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1F5195F1CF83E0A00EB0618 /* Debug */,
-				B1F519601CF83E0A00EB0618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
