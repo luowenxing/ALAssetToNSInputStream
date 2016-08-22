@@ -9,11 +9,16 @@ Now you just need to add a single `ALAssetToNSInputStream.swift` to your project
 #Usage
 
 * Add `ALAssetToNSInputStream.swift` to your project
-* Get `NSInputStream` by a line of code bellow
+* Get `NSInputStream` in either methods.
 ```
 //assuming assetUrl is the `NSURL` of `ALAsset`
-let inpurStream = NSInputStream.inputStreamWithAssetURL(assetUrl)
+let inpurStream1 = NSInputStream.inputStreamWithAssetURL(assetUrl)
+let inputStream2 = ALAssetNSInputStream(URL: assetUrl)
 ```
+**Note**
+
+`inputStream1` is implemented by `CFCreateBounderPair` which use two stream to transfer data from one side to the other side,and will not change the behavior of `NSInputStream`.It's may be more safer.
+`inputStream2` is implemented by inheriting `NSInputStream` which completely overrides super methods,and changes the behavoir of `NSInputStream`.
 * Set `HTTPBodyStream` of `NSMutableURLRequest` to `NSInputStream` you got
 * Start your network request by `NSURLConnection` or `NSURLSession`
 
