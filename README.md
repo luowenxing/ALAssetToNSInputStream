@@ -23,6 +23,16 @@ let inputStream2 = ALAssetNSInputStream(URL: assetUrl)
 * Set `HTTPBodyStream` of `NSMutableURLRequest` to `NSInputStream` you got
 * Start your network request by `NSURLConnection` or `NSURLSession`
 
+# About Multipart Form Stream
+If your server is designed for web application and only accept file using `multipart/formdata`,you can work around with [PKMultipartInputStream](https://github.com/pyke369/PKMultipartInputStream).
+```
+let stream = PKMultipartInputStream()
+let assetStream = ALAssetNSInputStream(URL: assetUrl)
+let rept = assetStream.rept
+stream.addPartWithName("fieldName", filename: rept.filename(), stream: assetStream, streamLength:UInt(rept.size()))
+```
+Then you got a `NSInputStream` containing `ALAsset` file with Content-Type of `Multipart/formdata`
+
 # Reference
 [iOS Developer Library](https://developer.apple.com/library/ios/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/WorkingWithHTTPAndHTTPSRequests/WorkingWithHTTPAndHTTPSRequests.html)
 > For large blocks of constructed data, call CFStreamCreateBoundPair to create a pair of streams, then call the setHTTPBodyStream: method to tell NSMutableURLRequest to use one of those streams as the source for its body content. By writing into the other stream, you can send the data a piece at a time.
