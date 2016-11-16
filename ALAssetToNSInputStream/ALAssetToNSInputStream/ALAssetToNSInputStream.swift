@@ -92,9 +92,15 @@ class ALAssetToNSInputStream:NSObject,NSStreamDelegate {
     
 }
 
+
+// 子类化class cluster(此处是NSStream) 要完全覆盖类簇方法和只读变量(getter)，否则如果调用到了就会崩溃，提示'xxxMethod only defined for abstract class'。
+// 而NSStream类簇和CFStream是toll-free-bridge,底层实际使用的是CFStream的方法
+// 所以需要实现实际调用的CFStream私有方法_scheduleInCFRunLoop
+// 故不建议子类化NSStream，而是使用CFStreamCreateBoundPair(官方文档)
+
 class ALAssetNSInputStream:NSInputStream {
     
-    
+    var localdelegate: NSStreamDelegate?
     var rept:ALAssetRepresentation!
     var lib:ALAssetsLibrary!
     var status:NSStreamStatus = .NotOpen
@@ -147,9 +153,21 @@ class ALAssetNSInputStream:NSInputStream {
         }
     }
     
+    override var delegate: NSStreamDelegate? {
+        set {
+            self.localdelegate = newValue
+        }
+        get {
+            return self.localdelegate
+        }
+    }
+    
+    // 私有方法 因为NSStream和CFStream toll-free-bridge 实际上底层使用的是CFStream，子类化NSStream需要实现CFStream的方法
+    func _scheduleInCFRunLoop(runLoop: NSRunLoop, forMode mode: String) {
+        print("call _scheduleInCFRunLoop")
+    }
+    
 }
-
-
 
 
 extension ALAsset {
