@@ -1,4 +1,4 @@
-#ALAssetToNSInputStream
+# ALAssetToNSInputStream
 
 When using `NSURLRequest` to upload a large file,we prefer to set `HTTPBodyStream` instead of `HTTPBody` in case of out of memory error if the file server support stream transfer.
 
@@ -6,7 +6,7 @@ If the large file is inside your sandbox,it would be easy to use initializer of 
 
 Now you just need to add a single `ALAssetToNSInputStream.swift` to your project and you can easily get it through.
 
-#Usage
+# Usage
 
 * Add `ALAssetToNSInputStream.swift` to your project
 * Get `NSInputStream` in either methods.
